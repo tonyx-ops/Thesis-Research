@@ -1,0 +1,5 @@
+# Install into an existing CUDA-enabled PyTorch environment (PyTorch >= 2.3).
+# Keep the template's torch build; do not replace it with a CPU build.
+numpy==1.26.4
+torch-geometric==2.6.1
+einops==0.8.0

@@ -1,0 +1,74 @@
+{
+  "explicit_cuda_fails_on_cpu_host": true,
+  "split_exact_match": true,
+  "split": {
+    "reference": "https://github.com/ruiqiRichard/EEGViT/blob/master/helper_functions.py",
+    "protocol": "sorted unique labels[:,0] IDs; 70/15/15 by ID count, rounded as EEGViT",
+    "total_samples": 21464,
+    "total_ids": 177,
+    "sample_counts": {
+      "train": 15076,
+      "val": 3134,
+      "test": 3254
+    },
+    "id_counts": {
+      "train": 123,
+      "val": 27,
+      "test": 27
+    },
+    "id_ranges": {
+      "train": [
+        1.0,
+        123.0
+      ],
+      "val": [
+        124.0,
+        150.0
+      ],
+      "test": [
+        151.0,
+        177.0
+      ]
+    },
+    "id_overlap": false,
+    "participant_mapping": "Unverified: ID counts are not established participant counts",
+    "paper_table_sample_counts": {
+      "train": 14706,
+      "val": 3277,
+      "test": 3481
+    },
+    "selection": "minimum validation MSE; test excluded from optimization and checkpoint selection"
+  },
+  "cpu_evaluation_and_checkpoint_round_trip": true,
+  "optimizer_updates": 0,
+  "actual_cuda_tested": false,
+  "cpu_behavior": {
+    "published": {
+      "parameters": 13105822,
+      "encoder_parameters_with_grad": 0,
+      "encoder_parameter_tensors": 64,
+      "cluster_loss_requires_grad": false,
+      "companion_max_change": 0.0032152198255062103,
+      "permutation_max_change": 0.0113757885992527,
+      "singleton_max_change": 0.008449938148260117
+    },
+    "joint_only": {
+      "parameters": 13105822,
+      "encoder_parameters_with_grad": 64,
+      "encoder_parameter_tensors": 64,
+      "cluster_loss_requires_grad": true,
+      "companion_max_change": 0.0032152198255062103,
+      "permutation_max_change": 0.0113757885992527,
+      "singleton_max_change": 0.008449938148260117
+    },
+    "corrected": {
+      "parameters": 2925074,
+      "encoder_parameters_with_grad": 40,
+      "encoder_parameter_tensors": 40,
+      "cluster_loss_requires_grad": true,
+      "companion_max_change": 0.0,
+      "permutation_max_change": 0.0,
+      "singleton_max_change": 3.725290298461914e-08
+    }
+  }
+}
